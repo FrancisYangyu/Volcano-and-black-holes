@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/date.js"></script>
+    <title>Volcano</title>
+</head>
+
+<body>
+    <form name="reg_testdate" >
+        <select id="year" name="YYYY" onchange="YYYYDD(this.value)">
+            <option value="">请选择 年</option>
+        </select>
+        <select id="month" name="MM" onchange="MMDD(this.value)">
+            <option value="">选择 月</option>
+        </select>
+        <select id="day" name="DD" onchange="getText()">
+            <option value="">选择 日</option>
+        </select>
+        <a href="#" id='time'></a>
+    </form>
+    <div id="allmap"></div>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>
